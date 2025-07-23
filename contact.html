@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: monospace, sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {  
+      background-color: #0056b3;
+    }
+
+    nav {
+      background-color: #DCDCDC;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: grey;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-family: monospace, sans-serif;
+    }
+
+    nav a:hover {
+      background-color: #DCDCDC;
+    }
+
+    body {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
